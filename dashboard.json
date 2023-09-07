@@ -1,0 +1,968 @@
+{
+    "properties": {
+      "lenses": {
+        "0": {
+          "order": 0,
+          "parts": {
+            "0": {
+              "position": {
+                "x": 0,
+                "y": 0,
+                "colSpan": 6,
+                "rowSpan": 4
+              },
+              "metadata": {
+                "inputs": [
+                  {
+                    "name": "scope",
+                    "value": "/subscriptions/ce2b384f-f8e8-4b5f-adcb-2567ca51cf66"
+                  },
+                  {
+                    "name": "scopeName",
+                    "value": "lt-dataplatform-dev"
+                  },
+                  {
+                    "name": "view",
+                    "value": {
+                      "currency": "EUR",
+                      "dateRange": "ThisMonth",
+                      "query": {
+                        "type": "ActualCost",
+                        "dataSet": {
+                          "granularity": "Daily",
+                          "aggregation": {
+                            "totalCost": {
+                              "name": "Cost",
+                              "function": "Sum"
+                            },
+                            "totalCostUSD": {
+                              "name": "CostUSD",
+                              "function": "Sum"
+                            }
+                          },
+                          "sorting": [
+                            {
+                              "direction": "ascending",
+                              "name": "UsageDate"
+                            }
+                          ]
+                        },
+                        "timeframe": "None"
+                      },
+                      "chart": "Area",
+                      "accumulated": "true",
+                      "pivots": [
+                        {
+                          "type": "Dimension",
+                          "name": "ServiceName"
+                        },
+                        {
+                          "type": "Dimension",
+                          "name": "ResourceLocation"
+                        },
+                        {
+                          "type": "Dimension",
+                          "name": "ResourceGroupName"
+                        }
+                      ],
+                      "scope": "subscriptions/ce2b384f-f8e8-4b5f-adcb-2567ca51cf66",
+                      "kpis": [
+                        {
+                          "type": "Budget",
+                          "id": "/subscriptions/ce2b384f-f8e8-4b5f-adcb-2567ca51cf66/providers/Microsoft.Consumption/budgets/budget-lt-dataplatform-dev",
+                          "enabled": true,
+                          "extendedProperties": {
+                            "name": "budget-lt-dataplatform-dev",
+                            "amount": 1150,
+                            "timeGrain": "Monthly",
+                            "type": "ce2b384f-f8e8-4b5f-adcb-2567ca51cf66"
+                          }
+                        },
+                        {
+                          "type": "Forecast",
+                          "enabled": true
+                        }
+                      ],
+                      "displayName": "AccumulatedCosts"
+                    },
+                    "isOptional": true
+                  },
+                  {
+                    "name": "externalState",
+                    "isOptional": true
+                  }
+                ],
+                "type": "Extension/Microsoft_Azure_CostManagement/PartType/CostAnalysisPinPart",
+                "deepLink": "#@LTsky.onmicrosoft.com/resource/subscriptions/ce2b384f-f8e8-4b5f-adcb-2567ca51cf66/costByResource"
+              }
+            },
+            "1": {
+              "position": {
+                "x": 6,
+                "y": 0,
+                "colSpan": 6,
+                "rowSpan": 4
+              },
+              "metadata": {
+                "inputs": [
+                  {
+                    "name": "scope",
+                    "value": "/subscriptions/5e6cfa3b-bff8-4f94-b3ca-142755de2be7"
+                  },
+                  {
+                    "name": "scopeName",
+                    "value": "lt-dataplatform-test"
+                  },
+                  {
+                    "name": "view",
+                    "value": {
+                      "currency": "EUR",
+                      "dateRange": "ThisMonth",
+                      "query": {
+                        "type": "ActualCost",
+                        "dataSet": {
+                          "granularity": "Daily",
+                          "aggregation": {
+                            "totalCost": {
+                              "name": "Cost",
+                              "function": "Sum"
+                            },
+                            "totalCostUSD": {
+                              "name": "CostUSD",
+                              "function": "Sum"
+                            }
+                          },
+                          "sorting": [
+                            {
+                              "direction": "ascending",
+                              "name": "UsageDate"
+                            }
+                          ]
+                        },
+                        "timeframe": "None"
+                      },
+                      "chart": "Area",
+                      "accumulated": "true",
+                      "pivots": [
+                        {
+                          "type": "Dimension",
+                          "name": "ServiceName"
+                        },
+                        {
+                          "type": "Dimension",
+                          "name": "ResourceLocation"
+                        },
+                        {
+                          "type": "Dimension",
+                          "name": "ResourceGroupName"
+                        }
+                      ],
+                      "scope": "subscriptions/5e6cfa3b-bff8-4f94-b3ca-142755de2be7",
+                      "kpis": [
+                        {
+                          "type": "Budget",
+                          "id": "COST_NAVIGATOR.BUDGET_OPTIONS.NONE",
+                          "enabled": true,
+                          "extendedProperties": {
+                            "name": "COST_NAVIGATOR.BUDGET_OPTIONS.NONE"
+                          }
+                        },
+                        {
+                          "type": "Forecast",
+                          "enabled": true
+                        }
+                      ],
+                      "displayName": "AccumulatedCosts"
+                    },
+                    "isOptional": true
+                  },
+                  {
+                    "name": "externalState",
+                    "isOptional": true
+                  }
+                ],
+                "type": "Extension/Microsoft_Azure_CostManagement/PartType/CostAnalysisPinPart",
+                "deepLink": "#@LTsky.onmicrosoft.com/resource/subscriptions/5e6cfa3b-bff8-4f94-b3ca-142755de2be7/costByResource"
+              }
+            },
+            "2": {
+              "position": {
+                "x": 12,
+                "y": 0,
+                "colSpan": 6,
+                "rowSpan": 4
+              },
+              "metadata": {
+                "inputs": [
+                  {
+                    "name": "scope",
+                    "value": "/subscriptions/1012adfe-2fb6-4d77-9d58-864bdcd77ba7"
+                  },
+                  {
+                    "name": "scopeName",
+                    "value": "lt-dataplatform-prod"
+                  },
+                  {
+                    "name": "view",
+                    "value": {
+                      "currency": null,
+                      "dateRange": "ThisMonth",
+                      "query": {
+                        "type": "ActualCost",
+                        "dataSet": {
+                          "granularity": "Daily",
+                          "aggregation": {
+                            "totalCost": {
+                              "name": "Cost",
+                              "function": "Sum"
+                            },
+                            "totalCostUSD": {
+                              "name": "CostUSD",
+                              "function": "Sum"
+                            }
+                          },
+                          "sorting": [
+                            {
+                              "direction": "ascending",
+                              "name": "UsageDate"
+                            }
+                          ]
+                        },
+                        "timeframe": "None"
+                      },
+                      "chart": "Area",
+                      "accumulated": "true",
+                      "pivots": [
+                        {
+                          "type": "Dimension",
+                          "name": "ServiceName"
+                        },
+                        {
+                          "type": "Dimension",
+                          "name": "ResourceLocation"
+                        },
+                        {
+                          "type": "Dimension",
+                          "name": "ResourceGroupName"
+                        }
+                      ],
+                      "scope": "subscriptions/1012adfe-2fb6-4d77-9d58-864bdcd77ba7",
+                      "kpis": [
+                        {
+                          "type": "Budget",
+                          "id": "COST_NAVIGATOR.BUDGET_OPTIONS.NONE",
+                          "enabled": true,
+                          "extendedProperties": {
+                            "name": "COST_NAVIGATOR.BUDGET_OPTIONS.NONE"
+                          }
+                        },
+                        {
+                          "type": "Forecast",
+                          "enabled": true
+                        }
+                      ],
+                      "displayName": "AccumulatedCosts"
+                    },
+                    "isOptional": true
+                  },
+                  {
+                    "name": "externalState",
+                    "isOptional": true
+                  }
+                ],
+                "type": "Extension/Microsoft_Azure_CostManagement/PartType/CostAnalysisPinPart",
+                "deepLink": "#@LTsky.onmicrosoft.com/resource/subscriptions/1012adfe-2fb6-4d77-9d58-864bdcd77ba7/costByResource"
+              }
+            },
+            "3": {
+              "position": {
+                "x": 0,
+                "y": 4,
+                "colSpan": 6,
+                "rowSpan": 4
+              },
+              "metadata": {
+                "inputs": [
+                  {
+                    "name": "scope",
+                    "value": "/subscriptions/6d78f327-5fa3-4ea8-840e-0e584e5060d3"
+                  },
+                  {
+                    "name": "scopeName",
+                    "value": "lt-dataplatform-iac"
+                  },
+                  {
+                    "name": "view",
+                    "value": {
+                      "currency": null,
+                      "dateRange": "ThisMonth",
+                      "query": {
+                        "type": "ActualCost",
+                        "dataSet": {
+                          "granularity": "Daily",
+                          "aggregation": {
+                            "totalCost": {
+                              "name": "Cost",
+                              "function": "Sum"
+                            },
+                            "totalCostUSD": {
+                              "name": "CostUSD",
+                              "function": "Sum"
+                            }
+                          },
+                          "sorting": [
+                            {
+                              "direction": "ascending",
+                              "name": "UsageDate"
+                            }
+                          ]
+                        },
+                        "timeframe": "None"
+                      },
+                      "chart": "Area",
+                      "accumulated": "true",
+                      "pivots": [
+                        {
+                          "type": "Dimension",
+                          "name": "ServiceName"
+                        },
+                        {
+                          "type": "Dimension",
+                          "name": "ResourceLocation"
+                        },
+                        {
+                          "type": "Dimension",
+                          "name": "ResourceGroupName"
+                        }
+                      ],
+                      "scope": "subscriptions/1012adfe-2fb6-4d77-9d58-864bdcd77ba7",
+                      "kpis": [
+                        {
+                          "type": "Budget",
+                          "id": "COST_NAVIGATOR.BUDGET_OPTIONS.NONE",
+                          "enabled": true,
+                          "extendedProperties": {
+                            "name": "COST_NAVIGATOR.BUDGET_OPTIONS.NONE"
+                          }
+                        },
+                        {
+                          "type": "Forecast",
+                          "enabled": true
+                        }
+                      ],
+                      "displayName": "AccumulatedCosts"
+                    },
+                    "isOptional": true
+                  },
+                  {
+                    "name": "externalState",
+                    "isOptional": true
+                  }
+                ],
+                "type": "Extension/Microsoft_Azure_CostManagement/PartType/CostAnalysisPinPart",
+                "deepLink": "#@LTsky.onmicrosoft.com/resource/subscriptions/6d78f327-5fa3-4ea8-840e-0e584e5060d3/costByResource"
+              }
+            },
+            "4": {
+              "position": {
+                "x": 6,
+                "y": 4,
+                "colSpan": 6,
+                "rowSpan": 4
+              },
+              "metadata": {
+                "inputs": [
+                  {
+                    "name": "scope",
+                    "value": "/subscriptions/115c5ebf-f842-4076-8419-44bd1bc98919"
+                  },
+                  {
+                    "name": "scopeName",
+                    "value": "lt-dataplatform-shared"
+                  },
+                  {
+                    "name": "view",
+                    "value": {
+                      "currency": null,
+                      "dateRange": "ThisMonth",
+                      "query": {
+                        "type": "ActualCost",
+                        "dataSet": {
+                          "granularity": "Daily",
+                          "aggregation": {
+                            "totalCost": {
+                              "name": "Cost",
+                              "function": "Sum"
+                            },
+                            "totalCostUSD": {
+                              "name": "CostUSD",
+                              "function": "Sum"
+                            }
+                          },
+                          "sorting": [
+                            {
+                              "direction": "ascending",
+                              "name": "UsageDate"
+                            }
+                          ]
+                        },
+                        "timeframe": "None"
+                      },
+                      "chart": "Area",
+                      "accumulated": "true",
+                      "pivots": [
+                        {
+                          "type": "Dimension",
+                          "name": "ServiceName"
+                        },
+                        {
+                          "type": "Dimension",
+                          "name": "ResourceLocation"
+                        },
+                        {
+                          "type": "Dimension",
+                          "name": "ResourceGroupName"
+                        }
+                      ],
+                      "scope": "subscriptions/6d78f327-5fa3-4ea8-840e-0e584e5060d3",
+                      "kpis": [
+                        {
+                          "type": "Budget",
+                          "id": "COST_NAVIGATOR.BUDGET_OPTIONS.NONE",
+                          "enabled": true,
+                          "extendedProperties": {
+                            "name": "COST_NAVIGATOR.BUDGET_OPTIONS.NONE"
+                          }
+                        },
+                        {
+                          "type": "Forecast",
+                          "enabled": true
+                        }
+                      ],
+                      "displayName": "AccumulatedCosts"
+                    },
+                    "isOptional": true
+                  },
+                  {
+                    "name": "externalState",
+                    "isOptional": true
+                  }
+                ],
+                "type": "Extension/Microsoft_Azure_CostManagement/PartType/CostAnalysisPinPart",
+                "deepLink": "#@LTsky.onmicrosoft.com/resource/subscriptions/115c5ebf-f842-4076-8419-44bd1bc98919/costByResource"
+              }
+            },
+            "5": {
+              "position": {
+                "x": 13,
+                "y": 5,
+                "colSpan": 4,
+                "rowSpan": 2
+              },
+              "metadata": {
+                "inputs": [
+                  {
+                    "name": "budgetId",
+                    "value": "subscriptions/ce2b384f-f8e8-4b5f-adcb-2567ca51cf66/providers/Microsoft.Consumption/budgets/budget-lt-dataplatform-dev"
+                  }
+                ],
+                "type": "Extension/Microsoft_Azure_CostManagement/PartType/CurrentSpendvsBudgetPart"
+              }
+            },
+            "6": {
+              "position": {
+                "x": 0,
+                "y": 8,
+                "colSpan": 5,
+                "rowSpan": 1
+              },
+              "metadata": {
+                "inputs": [],
+                "type": "Extension/HubsExtension/PartType/MarkdownPart",
+                "settings": {
+                  "content": {
+                    "content": "",
+                    "title": "LZ core component",
+                    "subtitle": "",
+                    "markdownSource": 1,
+                    "markdownUri": ""
+                  }
+                }
+              }
+            },
+            "7": {
+              "position": {
+                "x": 0,
+                "y": 9,
+                "colSpan": 6,
+                "rowSpan": 4
+              },
+              "metadata": {
+                "inputs": [
+                  {
+                    "name": "scope",
+                    "value": "/subscriptions/482156be-7cec-4e68-bba0-560d61fb5dca"
+                  },
+                  {
+                    "name": "scopeName",
+                    "value": "lt-connectivity"
+                  },
+                  {
+                    "name": "view",
+                    "value": {
+                      "currency": "EUR",
+                      "dateRange": "ThisMonth",
+                      "query": {
+                        "type": "ActualCost",
+                        "dataSet": {
+                          "granularity": "Daily",
+                          "aggregation": {
+                            "totalCost": {
+                              "name": "Cost",
+                              "function": "Sum"
+                            },
+                            "totalCostUSD": {
+                              "name": "CostUSD",
+                              "function": "Sum"
+                            }
+                          },
+                          "sorting": [
+                            {
+                              "direction": "ascending",
+                              "name": "UsageDate"
+                            }
+                          ]
+                        },
+                        "timeframe": "None"
+                      },
+                      "chart": "Area",
+                      "accumulated": "true",
+                      "pivots": [
+                        {
+                          "type": "Dimension",
+                          "name": "ServiceName"
+                        },
+                        {
+                          "type": "Dimension",
+                          "name": "ResourceLocation"
+                        },
+                        {
+                          "type": "Dimension",
+                          "name": "ResourceGroupName"
+                        }
+                      ],
+                      "scope": "subscriptions/482156be-7cec-4e68-bba0-560d61fb5dca",
+                      "kpis": [
+                        {
+                          "type": "Budget",
+                          "id": "COST_NAVIGATOR.BUDGET_OPTIONS.NONE",
+                          "enabled": true,
+                          "extendedProperties": {
+                            "name": "COST_NAVIGATOR.BUDGET_OPTIONS.NONE"
+                          }
+                        },
+                        {
+                          "type": "Forecast",
+                          "enabled": true
+                        }
+                      ],
+                      "displayName": "AccumulatedCosts"
+                    },
+                    "isOptional": true
+                  },
+                  {
+                    "name": "externalState",
+                    "isOptional": true
+                  }
+                ],
+                "type": "Extension/Microsoft_Azure_CostManagement/PartType/CostAnalysisPinPart",
+                "deepLink": "#@LTsky.onmicrosoft.com/resource/subscriptions/482156be-7cec-4e68-bba0-560d61fb5dca/costByResource"
+              }
+            },
+            "8": {
+              "position": {
+                "x": 6,
+                "y": 9,
+                "colSpan": 6,
+                "rowSpan": 4
+              },
+              "metadata": {
+                "inputs": [
+                  {
+                    "name": "scope",
+                    "value": "/subscriptions/6459b2ed-afeb-4b84-a5ef-55dad1fe83ce"
+                  },
+                  {
+                    "name": "scopeName",
+                    "value": "lt-management"
+                  },
+                  {
+                    "name": "view",
+                    "value": {
+                      "currency": "EUR",
+                      "dateRange": "ThisMonth",
+                      "query": {
+                        "type": "ActualCost",
+                        "dataSet": {
+                          "granularity": "Daily",
+                          "aggregation": {
+                            "totalCost": {
+                              "name": "Cost",
+                              "function": "Sum"
+                            },
+                            "totalCostUSD": {
+                              "name": "CostUSD",
+                              "function": "Sum"
+                            }
+                          },
+                          "sorting": [
+                            {
+                              "direction": "ascending",
+                              "name": "UsageDate"
+                            }
+                          ]
+                        },
+                        "timeframe": "None"
+                      },
+                      "chart": "Area",
+                      "accumulated": "true",
+                      "pivots": [
+                        {
+                          "type": "Dimension",
+                          "name": "ServiceName"
+                        },
+                        {
+                          "type": "Dimension",
+                          "name": "ResourceLocation"
+                        },
+                        {
+                          "type": "Dimension",
+                          "name": "ResourceGroupName"
+                        }
+                      ],
+                      "scope": "subscriptions/6459b2ed-afeb-4b84-a5ef-55dad1fe83ce",
+                      "kpis": [
+                        {
+                          "type": "Budget",
+                          "id": "/subscriptions/6459b2ed-afeb-4b84-a5ef-55dad1fe83ce/providers/Microsoft.Consumption/budgets/lt-management-Budget",
+                          "enabled": true,
+                          "extendedProperties": {
+                            "name": "lt-management-Budget",
+                            "amount": 2300,
+                            "timeGrain": "Monthly",
+                            "type": "6459b2ed-afeb-4b84-a5ef-55dad1fe83ce"
+                          }
+                        },
+                        {
+                          "type": "Forecast",
+                          "enabled": true
+                        }
+                      ],
+                      "displayName": "AccumulatedCosts"
+                    },
+                    "isOptional": true
+                  },
+                  {
+                    "name": "externalState",
+                    "isOptional": true
+                  }
+                ],
+                "type": "Extension/Microsoft_Azure_CostManagement/PartType/CostAnalysisPinPart",
+                "deepLink": "#@LTsky.onmicrosoft.com/resource/subscriptions/6459b2ed-afeb-4b84-a5ef-55dad1fe83ce/costByResource"
+              }
+            },
+            "9": {
+              "position": {
+                "x": 12,
+                "y": 9,
+                "colSpan": 6,
+                "rowSpan": 4
+              },
+              "metadata": {
+                "inputs": [
+                  {
+                    "name": "scope",
+                    "value": "/subscriptions/a4cf7c0a-b683-4a42-bf9f-92a1c8e0693c"
+                  },
+                  {
+                    "name": "scopeName",
+                    "value": "lt-identity"
+                  },
+                  {
+                    "name": "view",
+                    "value": {
+                      "currency": "EUR",
+                      "dateRange": "ThisMonth",
+                      "query": {
+                        "type": "ActualCost",
+                        "dataSet": {
+                          "granularity": "Daily",
+                          "aggregation": {
+                            "totalCost": {
+                              "name": "Cost",
+                              "function": "Sum"
+                            },
+                            "totalCostUSD": {
+                              "name": "CostUSD",
+                              "function": "Sum"
+                            }
+                          },
+                          "sorting": [
+                            {
+                              "direction": "ascending",
+                              "name": "UsageDate"
+                            }
+                          ]
+                        },
+                        "timeframe": "None"
+                      },
+                      "chart": "Area",
+                      "accumulated": "true",
+                      "pivots": [
+                        {
+                          "type": "Dimension",
+                          "name": "ServiceName"
+                        },
+                        {
+                          "type": "Dimension",
+                          "name": "ResourceLocation"
+                        },
+                        {
+                          "type": "Dimension",
+                          "name": "ResourceGroupName"
+                        }
+                      ],
+                      "scope": "subscriptions/a4cf7c0a-b683-4a42-bf9f-92a1c8e0693c",
+                      "kpis": [
+                        {
+                          "type": "Budget",
+                          "id": "COST_NAVIGATOR.BUDGET_OPTIONS.NONE",
+                          "enabled": true,
+                          "extendedProperties": {
+                            "name": "COST_NAVIGATOR.BUDGET_OPTIONS.NONE"
+                          }
+                        },
+                        {
+                          "type": "Forecast",
+                          "enabled": true
+                        }
+                      ],
+                      "displayName": "AccumulatedCosts"
+                    },
+                    "isOptional": true
+                  },
+                  {
+                    "name": "externalState",
+                    "isOptional": true
+                  }
+                ],
+                "type": "Extension/Microsoft_Azure_CostManagement/PartType/CostAnalysisPinPart",
+                "deepLink": "#@LTsky.onmicrosoft.com/resource/subscriptions/a4cf7c0a-b683-4a42-bf9f-92a1c8e0693c/costByResource"
+              }
+            },
+            "10": {
+              "position": {
+                "x": 0,
+                "y": 13,
+                "colSpan": 6,
+                "rowSpan": 4
+              },
+              "metadata": {
+                "inputs": [
+                  {
+                    "name": "scope",
+                    "value": "/subscriptions/5e6cfa3b-bff8-4f94-b3ca-142755de2be7"
+                  },
+                  {
+                    "name": "scopeName",
+                    "value": "lt-dataplatform-test"
+                  },
+                  {
+                    "name": "view",
+                    "value": {
+                      "currency": "EUR",
+                      "dateRange": "ThisMonth",
+                      "query": {
+                        "type": "ActualCost",
+                        "dataSet": {
+                          "granularity": "Daily",
+                          "aggregation": {
+                            "totalCost": {
+                              "name": "Cost",
+                              "function": "Sum"
+                            },
+                            "totalCostUSD": {
+                              "name": "CostUSD",
+                              "function": "Sum"
+                            }
+                          },
+                          "sorting": [
+                            {
+                              "direction": "ascending",
+                              "name": "UsageDate"
+                            }
+                          ]
+                        },
+                        "timeframe": "None"
+                      },
+                      "chart": "Area",
+                      "accumulated": "true",
+                      "pivots": [
+                        {
+                          "type": "Dimension",
+                          "name": "ServiceName"
+                        },
+                        {
+                          "type": "Dimension",
+                          "name": "ResourceLocation"
+                        },
+                        {
+                          "type": "Dimension",
+                          "name": "ResourceGroupName"
+                        }
+                      ],
+                      "scope": "subscriptions/5e6cfa3b-bff8-4f94-b3ca-142755de2be7",
+                      "kpis": [
+                        {
+                          "type": "Budget",
+                          "id": "/subscriptions/5e6cfa3b-bff8-4f94-b3ca-142755de2be7/providers/Microsoft.Consumption/budgets/budget-lt-dataplatform-test",
+                          "enabled": true,
+                          "extendedProperties": {
+                            "name": "budget-lt-dataplatform-test",
+                            "amount": 1500,
+                            "timeGrain": "Monthly",
+                            "type": "5e6cfa3b-bff8-4f94-b3ca-142755de2be7"
+                          }
+                        },
+                        {
+                          "type": "Forecast",
+                          "enabled": true
+                        }
+                      ],
+                      "displayName": "AccumulatedCosts"
+                    },
+                    "isOptional": true
+                  },
+                  {
+                    "name": "externalState",
+                    "isOptional": true
+                  }
+                ],
+                "type": "Extension/Microsoft_Azure_CostManagement/PartType/CostAnalysisPinPart",
+                "deepLink": "#view/Microsoft_Azure_CostManagement/Menu/~/costanalysis/scope/%2Fsubscriptions%2F5e6cfa3b-bff8-4f94-b3ca-142755de2be7/open/CostAnalysis/openedBy/CostAnalysisTile/view~/%7B%22currency%22%3A%22EUR%22%2C%22dateRange%22%3A%22ThisMonth%22%2C%22query%22%3A%7B%22type%22%3A%22ActualCost%22%2C%22dataSet%22%3A%7B%22granularity%22%3A%22Daily%22%2C%22aggregation%22%3A%7B%22totalCost%22%3A%7B%22name%22%3A%22Cost%22%2C%22function%22%3A%22Sum%22%7D%2C%22totalCostUSD%22%3A%7B%22name%22%3A%22CostUSD%22%2C%22function%22%3A%22Sum%22%7D%7D%2C%22sorting%22%3A%5B%7B%22direction%22%3A%22ascending%22%2C%22name%22%3A%22UsageDate%22%7D%5D%7D%2C%22timeframe%22%3A%22None%22%7D%2C%22chart%22%3A%22Area%22%2C%22accumulated%22%3A%22true%22%2C%22pivots%22%3A%5B%7B%22type%22%3A%22Dimension%22%2C%22name%22%3A%22ServiceName%22%7D%2C%7B%22type%22%3A%22Dimension%22%2C%22name%22%3A%22ResourceLocation%22%7D%2C%7B%22type%22%3A%22Dimension%22%2C%22name%22%3A%22ResourceGroupName%22%7D%5D%2C%22scope%22%3A%22subscriptions%2F5e6cfa3b-bff8-4f94-b3ca-142755de2be7%22%2C%22kpis%22%3A%5B%7B%22type%22%3A%22Budget%22%2C%22id%22%3A%22COST_NAVIGATOR.BUDGET_OPTIONS.NONE%22%2C%22enabled%22%3Atrue%2C%22extendedProperties%22%3A%7B%22name%22%3A%22COST_NAVIGATOR.BUDGET_OPTIONS.NONE%22%7D%7D%2C%7B%22type%22%3A%22Forecast%22%2C%22enabled%22%3Atrue%7D%5D%2C%22displayName%22%3A%22AccumulatedCosts%22%7D"
+              }
+            },
+            "11": {
+              "position": {
+                "x": 6,
+                "y": 13,
+                "colSpan": 6,
+                "rowSpan": 4
+              },
+              "metadata": {
+                "inputs": [
+                  {
+                    "name": "scope",
+                    "value": "/subscriptions/d03ab42a-b653-408b-a015-83c5779fa5c9"
+                  },
+                  {
+                    "name": "scopeName",
+                    "value": "lt-hr-test"
+                  },
+                  {
+                    "name": "view",
+                    "value": {
+                      "currency": "EUR",
+                      "dateRange": "ThisMonth",
+                      "query": {
+                        "type": "ActualCost",
+                        "dataSet": {
+                          "granularity": "Daily",
+                          "aggregation": {
+                            "totalCost": {
+                              "name": "Cost",
+                              "function": "Sum"
+                            },
+                            "totalCostUSD": {
+                              "name": "CostUSD",
+                              "function": "Sum"
+                            }
+                          },
+                          "sorting": [
+                            {
+                              "direction": "ascending",
+                              "name": "UsageDate"
+                            }
+                          ]
+                        },
+                        "timeframe": "None"
+                      },
+                      "chart": "Area",
+                      "accumulated": "true",
+                      "pivots": [
+                        {
+                          "type": "Dimension",
+                          "name": "ServiceName"
+                        },
+                        {
+                          "type": "Dimension",
+                          "name": "ResourceLocation"
+                        },
+                        {
+                          "type": "Dimension",
+                          "name": "ResourceGroupName"
+                        }
+                      ],
+                      "scope": "subscriptions/d03ab42a-b653-408b-a015-83c5779fa5c9",
+                      "kpis": [
+                        {
+                          "type": "Budget",
+                          "id": "COST_NAVIGATOR.BUDGET_OPTIONS.NONE",
+                          "enabled": true,
+                          "extendedProperties": {
+                            "name": "COST_NAVIGATOR.BUDGET_OPTIONS.NONE"
+                          }
+                        },
+                        {
+                          "type": "Forecast",
+                          "enabled": true
+                        }
+                      ],
+                      "displayName": "AccumulatedCosts"
+                    },
+                    "isOptional": true
+                  },
+                  {
+                    "name": "externalState",
+                    "isOptional": true
+                  }
+                ],
+                "type": "Extension/Microsoft_Azure_CostManagement/PartType/CostAnalysisPinPart",
+                "deepLink": "#@LTsky.onmicrosoft.com/resource/subscriptions/d03ab42a-b653-408b-a015-83c5779fa5c9/costByResource"
+              }
+            }
+          }
+        }
+      },
+      "metadata": {
+        "model": {
+          "timeRange": {
+            "value": {
+              "relative": {
+                "duration": 24,
+                "timeUnit": 1
+              }
+            },
+            "type": "MsPortalFx.Composition.Configuration.ValueTypes.TimeRange"
+          }
+        }
+      }
+    },
+    "name": "Budgets Test",
+    "type": "Microsoft.Portal/dashboards",
+    "location": "INSERT LOCATION",
+    "tags": {
+      "hidden-title": "Budgets Test"
+    },
+    "apiVersion": "2015-08-01-preview"
+  }

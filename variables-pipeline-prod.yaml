@@ -1,0 +1,49 @@
+variables:
+  
+  admin.azureDevOpsOrganization: ltsky
+  admin.azureGithubClientOrganization: $(admin.azureDevOpsOrganization) 
+  # fill in a repo name
+  admin.azureDevOpsProject: lt-sub-admin
+  admin.azureConnection: az-lz-core
+  admin.azureEnvironmentConnection: az-lz-core
+  admin.wikiProject: wiki
+
+  # core infra uses management subscription for state file store in test env
+  admin.subscriptionId: 6459b2ed-afeb-4b84-a5ef-55dad1fe83ce
+  ARM_SUBSCRIPTION_ID: 6459b2ed-afeb-4b84-a5ef-55dad1fe83ce
+
+  git.token: $(git.tokenAzuredevops)
+  git.tokenAzuredevops: svjzzip2z2dmyozxttk4pu2btkqo6l7p6o7ra4d342armzhns4nq
+  
+  settings.location: westeurope
+  settings.project: Landing%20Zone
+  settings.department: $(admin.azureDevOpsOrganization)
+  settings.wikireleasedirectory: "$(customer_shortname)-$(azure_esSubscriptionShortname)-release"
+  settings.cloneSourceWiki: $(settings.azuredevops)
+  settings.cloneSourceTerraformCode: $(settings.azuredevops)
+  settings.azureDevopsUrl: dev.azure.com
+  settings.githubUrl: github.com
+  
+  # branch used for dev testing terraform client project default is empty if master code needs to checkout
+  settings.branch: main
+  settings.github: github
+  settings.azuredevops: azuredevops
+
+  terraform.backendLocation: West Europe
+  terraform.path: $(admin.azureDevOpsProject)
+  terraform.version: 1.2.1
+  terraform.destroy: False
+  terraform.remoteStateFileResourceGroup: "rg-$(customer.shortname)-tfbackend-$(azure.esSubscriptionShortname)"
+  terraform.remoteStateFileStorageAccount:  "sta$(customer.shortname)tf$(azure.esSubscriptionShortname)01" 
+  terraform.remoteStateFileBlobContainer: "$(customer.shortname)-$(azure.esSubscriptionShortname)-bc-01"
+  terraform.remoteStateFile: "$(customer.shortname)-$(admin.azureDevOpsProject)-$(environment).tfstate"
+  terraform.tags: "ServiceProvider=tietoevry ProductName=lz ApplicationName=TerraformState Owner=mikko.palsola@lt.fi SLA=te Guid=te Environment=prod IaC=true"
+  terraform.workdir: terraform
+  
+  customer.shortname: lt
+  azure.esSubscriptionShortname: subadmin
+
+  TF_VAR_ENVIRONMENT: $(environment)
+  
+  
+  
