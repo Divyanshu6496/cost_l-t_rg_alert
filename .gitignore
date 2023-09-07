@@ -1,0 +1,17 @@
+.terraform*.lock.hcl
+    - .terraform
+    - terraform.tfstate
+    - terraform.tfstate.backup
+    - terraform.tfvars
+    - .terraformrc
+    - terraform.rc
+    - .terraform-version
+    - .terraform.lock.hcl
+    - .terraform.lock.json
+    - terraform-provider-*
+    - terraform.tfstate.d
+    - terraform-provider-*
+    - terraform.tfstate.d
+
+
+terraform/.terraform*

@@ -1,0 +1,32 @@
+name: $(BuildDefinitionName).$(DayOfYear)$(Rev:.r)
+trigger:
+  batch: 'true'
+  branches:
+    include:
+      - main
+
+parameters:
+- name: enviroment
+  displayName: "Choose Enviroment:"
+  type: string
+  default: prod
+  values:
+    - prod
+
+variables:
+- template: \terraform\variables\variables-pipeline-${{parameters.enviroment}}.yaml
+- name: environment
+  value: ${{ parameters.enviroment }}
+
+resources:
+  repositories:
+  - repository: pipeline-terraform
+    type: github
+    name: corp-automation-finland-azure/tf-azure-pipeline
+    ref: refs/tags/v1.1.2    
+    endpoint: az-lz-github
+
+stages:
+- template: Terraform-Stages.yaml@pipeline-terraform
+  parameters:
+    environment: ${{ parameters.enviroment }}
